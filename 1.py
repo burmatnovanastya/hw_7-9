@@ -8,8 +8,10 @@ def check(a, b, c):
     else:
         print('Ни одно из двух неравенств не выполняется')
 
-a = float(input('Введите a: '))
-b = float(input('Введите b: '))
-c = float(input('Введите c: '))
-
-check(a, b, c)
+try:
+	a = float(input('Введите a: '))
+	b = float(input('Введите b: '))
+	c = float(input('Введите c: '))
+	check(a, b, c)
+except ValueError :
+	print('Ошибка. Введите число.')
